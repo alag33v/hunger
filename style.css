@@ -140,7 +140,7 @@ body {
 .icons__link-first {
   position: absolute;
   top: -179px;
-  right: 101px;
+  right: 102px;
   outline: none;
 }
 
@@ -149,7 +149,7 @@ body {
   width: 60px;
   height: 60px;
   margin-top: -21px;
-  margin-left: -38px;
+  margin-left: -37px;
   border-radius: 50%;
   position: absolute;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -210,7 +210,7 @@ body {
 .button {
   font-size: 12px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 1.67;
   color: #fff;
   background-color: #000;
   border: none;
@@ -254,4 +254,91 @@ body {
 .hungry-people__circle:hover ellipse,
 .hungry-people__circle:focus ellipse {
   fill: #e8c300;
+}
+
+/* second section */
+
+.about-us {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.about-us__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 205px;
+  padding-left: 95px;
+  align-items: center;
+}
+
+.about-us__content {
+  margin-left: 1px;
+}
+
+.about-us__title {
+  font-family: 'BannyRound', 'Open Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.33;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin: 9px 0 27px 55px;
+}
+
+.about-us__title::after {
+  content: '';
+  width: 60px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #e8c300;
+  top: 57px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.about-us__sub-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.56;
+  color: #000;
+  display: block;
+  text-align: center;
+  max-width: 570px;
+  margin-bottom: 20px;
+}
+
+.about-us__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  color: #000;
+  text-align: center;
+  max-width: 570px;
+}
+
+.about-us__image {
+  position: relative;
+}
+
+.about-us__image::after {
+  content: '';
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  border: 20px solid #e8c300;
+  border-radius: 5px;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  transition: 2.5s;
+}
+
+.about-us__image:hover::after {
+  transform: translate(50%, -50%) rotate(-90deg);
 }
