@@ -1,0 +1,257 @@
+*:focus {
+  outline: 2px solid #e8c300;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* first section */
+
+.hungry-people {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #222;
+  padding-top: 38px;
+  padding-bottom: 88px;
+  background: url(images/hungryPeople/header-bg.jpg) no-repeat;
+}
+
+.header {
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: start;
+}
+
+.nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  list-style: none;
+  margin-right: 92px;
+}
+
+.nav__item:first-child {
+  margin-left: 127px;
+}
+
+.nav__item:nth-child(4) {
+  margin-right: 305px;
+}
+
+.nav__item:nth-child(5) {
+  margin-right: 88px;
+}
+
+.nav__item:nth-child(6) {
+  margin-right: 87px;
+}
+
+.nav__item:nth-child(7) {
+  margin-right: 81px;
+}
+
+.nav__link {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #e8c300;
+}
+
+.header__image {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hungry-people__sup-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 267px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hungry-people__title {
+  font-family: 'BannyRound', 'Open Sans', sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  margin-top: 18px;
+  position: relative;
+}
+
+.hungry-people__title::after {
+  content: '';
+  width: 60px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #e8c300;
+  top: 117px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.content__wrapper {
+  position: relative;
+}
+
+.hungry-people__content {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  transform: rotate(-90deg);
+  left: -37px;
+  top: -106px;
+  position: absolute;
+}
+
+.icons__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.icons__link-first {
+  position: absolute;
+  top: -179px;
+  right: 101px;
+  outline: none;
+}
+
+.icons__link-first::after {
+  content: '';
+  width: 60px;
+  height: 60px;
+  margin-top: -21px;
+  margin-left: -38px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.icons__link-second {
+  position: absolute;
+  top: -96px;
+  right: 99px;
+  outline: none;
+}
+
+.icons__link-second::after {
+  content: '';
+  width: 60px;
+  height: 60px;
+  margin-top: -23px;
+  margin-left: -41px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.icons__link-third {
+  position: absolute;
+  top: -16px;
+  right: 100px;
+  outline: none;
+}
+
+.icons__link-third::after {
+  content: '';
+  width: 60px;
+  height: 60px;
+  margin-top: -23px;
+  margin-left: -40px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.icons__link-first:hover::after,
+.icons__link-first:focus::after,
+.icons__link-second:hover::after,
+.icons__link-second:focus::after,
+.icons__link-third:hover::after,
+.icons__link-third:focus::after {
+  border: 1px solid #fff;
+  outline: none;
+}
+
+.buttons__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.button--yellow {
+  background-color: #e8c300;
+  margin-top: -23px;
+}
+
+.button--yellow:hover,
+.button--yellow:focus {
+  background-color: #ffd600;
+}
+
+.button--transparent {
+  margin-top: -23px;
+  margin-left: 40px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hungry-people__circle {
+  display: block;
+  text-align: center;
+  margin-top: 90px;
+  outline: none;
+}
+
+.hungry-people__circle:hover ellipse,
+.hungry-people__circle:focus ellipse {
+  fill: #e8c300;
+}
