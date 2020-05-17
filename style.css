@@ -4,19 +4,6 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
 }
 
 .visually-hidden {
@@ -104,7 +91,7 @@ body {
 .hungry-people__sup-title {
   display: flex;
   justify-content: center;
-  padding-top: 267px;
+  padding-top: 271px;
   margin-left: 10px;
   font-size: 12px;
   font-weight: 700;
@@ -121,7 +108,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   line-height: 1;
-  margin-top: 18px;
+  margin-top: 20px;
+  margin-bottom: 80px;
   position: relative;
 }
 
@@ -901,7 +889,7 @@ body {
   color: #fff;
   background-color: #000;
   position: absolute;
-  top: 178px;
+  top: 177px;
   right: -198px;
   transform: rotate(90deg);
   width: 475px;
@@ -938,7 +926,7 @@ body {
   color: #fff;
   background-color: #000;
   position: absolute;
-  top: 178px;
+  top: 177px;
   right: 198px;
   transform: rotate(-90deg);
   width: 475px;
