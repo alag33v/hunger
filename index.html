@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="fonts/banny/Banny-BoldRound.css">
+  <link rel="stylesheet" href="slick.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -131,25 +132,60 @@
 
   <section class="specialties">
     <h3 class="specialties__sup-title">specialties</h3>
-    <div class="specialties__wrapper">
-      <div class="specialties__image">
-        <img src="images/specialties/food.jpg" alt="delicious food">
+    <div class="slider">
+      <div class="specialties__item">
+        <div class="specialties__image">
+          <img src="images/specialties/pancakes.jpg" alt="pancakes" width="475" height="475">
+        </div>
+        <div class="specialties__content">
+          <h2 class="specialties__title">delicious pancakes</h2>
+          <strong class="specialties__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+            velit
+            maximus, molestie est a,
+            tempor magna.</strong>
+          <p class="specialties__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi
+            non
+            ultrices ligula. Sed
+            dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+            tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+        </div>
       </div>
-      <div class="specialties__content">
-        <h2 class="specialties__title">chocolate pancakes</h2>
-        <strong class="specialties__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
-          maximus, molestie est a,
-          tempor magna.</strong>
-        <p class="specialties__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non
-          ultrices ligula. Sed
-          dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
-          tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+
+      <div class="specialties__item">
+        <div class="specialties__image">
+          <img src="images/specialties/food.jpg" alt="pancakes" width="475" height="475">
+        </div>
+        <div class="specialties__content">
+          <h2 class="specialties__title">chocolate pancakes</h2>
+          <strong class="specialties__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+            velit
+            maximus, molestie est a,
+            tempor magna.</strong>
+          <p class="specialties__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi
+            non
+            ultrices ligula. Sed
+            dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+            tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+        </div>
       </div>
-    </div>
-    <div class="specialties__circle-wrapper">
-      <div class="specialties__circle"></div>
-      <div class="specialties__circle specialties__circle--active"></div>
-      <div class="specialties__circle"></div>
+
+      <div class="specialties__item">
+        <div class="specialties__image">
+          <img src="images/specialties/waffles.jpg" alt="waffles" width="475" height="475">
+        </div>
+        <div class="specialties__content">
+          <h2 class="specialties__title">waffles</h2>
+          <strong class="specialties__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+            velit
+            maximus, molestie est a,
+            tempor magna.</strong>
+          <p class="specialties__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi
+            non
+            ultrices ligula. Sed
+            dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+            tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -253,6 +289,12 @@
     <p class="footer__creator">&copy; Copyright <a class="footer__link" href="https://dribbble.com/mindblister"
         target="_blank">Mindblister</a> 2019</p>
   </footer>
+
+  <!-- scripts -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
+  <script src="scripts/app.js"></script>
 
 </body>
 

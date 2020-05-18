@@ -609,7 +609,7 @@ body {
   margin-left: 10px;
 }
 
-.specialties__wrapper {
+.specialties__item {
   display: flex;
   justify-content: space-between;
   padding-left: 205px;
@@ -623,6 +623,10 @@ body {
 
 .specialties__image img {
   border-radius: 5px;
+  background-size: cover;
+}
+
+.paddings {
 }
 
 .specialties__image::after {
@@ -689,30 +693,6 @@ body {
   color: rgba(255, 255, 255, 0.9);
   max-width: 580px;
   margin-top: 17px;
-}
-
-.specialties__circle-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-.specialties__circle {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: tomato;
-  text-align: center;
-  margin-right: 20px;
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.specialties__circle:last-child {
-  margin-right: 0;
-}
-
-.specialties__circle--active {
-  background: #fff;
 }
 
 /* sixth section */
