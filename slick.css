@@ -19,10 +19,19 @@
 
 .slick-list {
   position: relative;
+
   display: block;
   overflow: hidden;
+
   margin: 0;
   padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
 }
 
 .slick-slider .slick-track,
@@ -92,31 +101,30 @@
   display: none;
 }
 
-/* My styles */
+/* Dots */
 
-.slider .slick-dots {
+.slick-dots {
   display: flex;
   justify-content: center;
-  margin: 0;
-  margin-left: -20px;
-}
-
-.slider .slick-dots li {
+  width: 100%;
+  left: 0;
   list-style: none;
-  margin-top: 35px;
+  margin: 35px 0 0 10px;
+  padding: 0;
 }
 
-.slider .slick-dots button {
+.slick-dots button {
   font-size: 0;
-  border: none;
-  background: transparent;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  margin-right: 18px;
   background-color: rgba(255, 255, 255, 0.5);
+  margin-right: 18px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
-.slider .slick-dots li.slick-active button {
+.slick-active button {
   background-color: #fff;
 }
