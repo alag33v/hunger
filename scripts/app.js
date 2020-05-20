@@ -1,4 +1,19 @@
 $(document).ready(function () {
+  /* Fixed header */
+  let header = $('.nav');
+  let cloneHeader = header.clone();
+  let introH = $('.about-us').innerHeight();
+  cloneHeader.addClass('fixed');
+  header.before(cloneHeader);
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > introH) {
+      cloneHeader.addClass('show');
+    } else {
+      cloneHeader.removeClass('show');
+    }
+  });
+
   /* Slick slider */
   $('.slider').slick({
     arrows: false,

@@ -28,13 +28,10 @@ body {
   background: url(images/hungryPeople/header-bg.jpg) no-repeat;
 }
 
-.header {
-  position: relative;
-}
-
 .nav {
   display: flex;
   justify-content: start;
+  transition: 0.3s;
 }
 
 .nav__list {
@@ -75,10 +72,45 @@ body {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .nav__link:hover {
   color: #e8c300;
+}
+
+/* header fixed */
+
+.nav.fixed {
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  padding: 20px 0;
+  background-color: #222;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  top: -100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.nav.fixed::before {
+  content: '';
+  width: 45px;
+  height: 45px;
+  background: url(images/hungryPeople/helm.svg) center / cover no-repeat;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.nav.show {
+  top: 0;
+}
+
+.header {
+  position: relative;
 }
 
 .header__image {
