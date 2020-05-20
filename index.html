@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="fonts/banny/Banny-BoldRound.css">
   <link rel="stylesheet" href="slick.css">
+  <link rel="stylesheet" href="jquery.fancybox.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -119,7 +120,15 @@
           <p class="book__item">
             <input type="text" placeholder="Time" aria-label="Time">
           </p>
-          <button class="button book__button" type="submit">book now</button>
+          <button class="button book__button" type="submit" data-fancybox data-src="#trueModal" data-modal="true"
+            href="javascript:;">book now</button>
+          <div id="trueModal" class="trueModal">
+            <div class="book__wrapper-popup">
+              <h2>Success!</h2>
+              <p>We have reserved a table.</p>
+              <p><button data-fancybox-close class="btn pop-up__button">Accept</button></p>
+            </div>
+          </div>
         </form>
       </div>
       <div class="book__image">
@@ -308,18 +317,25 @@
     <div class="contact__wrapper">
       <ul class="contact__list">
         <li class="contact__list-item contact__list-item--first">
-          <a class="contact__list-link" href="#">5th London Boulevard, U.K.</a>
+          <a class="contact__list-link">5th London Boulevard, U.K.</a>
         </li>
         <li class="contact__list-item contact__list-item--second">
-          <a class="contact__list-link" href="#">+40 729 131 637/+40 726 458 782</a>
+          <a class="contact__list-link">+40 729 131 637/+40 726 458 782</a>
         </li>
         <li class="contact__list-item contact__list-item--third">
-          <a class="contact__list-link" href="#">office@mindblister.com</a>
+          <a class="contact__list-link">office@mindblister.com</a>
         </li>
       </ul>
-      <button class="button contact__button" type="submit">SEND MESSAGE</button>
+      <button class="button contact__button" type="submit" data-fancybox data-animation-duration="800"
+        data-src="#animatedModal" href="javascript:;">SEND MESSAGE</button>
     </div>
 
+    <div id="animatedModal" class="animated-modal">
+      <div class="pop-up__wrapper">
+        <h2>Success!</h2>
+        <p>Your letter has been sent. We will contact you shortly.</p>
+      </div>
+    </div>
   </section>
 
   <!-- footer -->
@@ -333,6 +349,7 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="scripts/slick.min.js"></script>
+  <script src="scripts/jquery.fancybox.min.js"></script>
   <script src="scripts/app.js"></script>
 
 </body>
