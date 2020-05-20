@@ -24,13 +24,15 @@
           <li class="nav__item"><a class="nav__link" href="#" data-scroll=".about-us">about</a></li>
           <li class="nav__item"><a class="nav__link" href="#" data-scroll=".our-team">team</a></li>
           <li class="nav__item"><a class="nav__link" href="#" data-scroll=".book">booking</a></li>
-          <li class="nav__item"><a class="nav__link" href="#" data-scroll=".specialties">menu</a></li>
-          <li class="nav__item"><a class="nav__link" href="#" data-scroll=".menu">galerie</a></li>
+          <li class="nav__item"><a class="nav__link" href="#" data-scroll=".menu">menu</a></li>
           <li class="nav__item"><a class="nav__link" href="#" data-scroll=".events">events</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">contact</a></li>
+          <li class="nav__item"><a class="nav__link" href="#" data-scroll=".gallery">galerie</a></li>
+          <li class="nav__item"><a class="nav__link" href="#" data-scroll=".contact">contact</a></li>
         </ul>
       </nav>
-      <img class="header__image" src="images/hungryPeople/helm.svg" alt="helm">
+      <a class="header__link-img" href="#" data-scroll=".hungry-people">
+        <img class="header__image" src="images/hungryPeople/helm.svg" alt="helm">
+      </a>
     </header>
     <strong class="hungry-people__sup-title">RESTAURANT</strong>
     <h1 class="hungry-people__title">hungry people</h1>
@@ -281,6 +283,43 @@
   <section class="gallery">
     <h2 class="visually-hidden">Gallery</h2>
     <img src="images/gallery/gallery.jpg" alt="gallery">
+  </section>
+
+  <!-- ninth section -->
+
+  <section class="contact">
+    <h2 class="contact__title">CONTACT</h2>
+    <strong class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+      molestie est a, tempor magna.</strong>
+    <form class="contact__form">
+      <p class="contact__item">
+        <input type="text" placeholder="Name" aria-label="Name">
+      </p>
+      <p class="contact__item">
+        <input type="email" placeholder="Email" aria-label="Email">
+      </p>
+      <p class="contact__item">
+        <input type="tel" placeholder="Phone" aria-label="Phone">
+      </p>
+      <p class="contact__item">
+        <textarea class="contact__textarea" placeholder="Message"></textarea>
+      </p>
+    </form>
+    <div class="contact__wrapper">
+      <ul class="contact__list">
+        <li class="contact__list-item contact__list-item--first">
+          <a class="contact__list-link" href="#">5th London Boulevard, U.K.</a>
+        </li>
+        <li class="contact__list-item contact__list-item--second">
+          <a class="contact__list-link" href="#">+40 729 131 637/+40 726 458 782</a>
+        </li>
+        <li class="contact__list-item contact__list-item--third">
+          <a class="contact__list-link" href="#">office@mindblister.com</a>
+        </li>
+      </ul>
+      <button class="button contact__button" type="submit">SEND MESSAGE</button>
+    </div>
+
   </section>
 
   <!-- footer -->
