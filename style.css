@@ -21,12 +21,13 @@ body {
   padding-top: 38px;
   padding-bottom: 88px;
   background-color: #222;
-  background: url(images/hungryPeople/header-bg.jpg) no-repeat;
+  background: url(images/hungryPeople/header-bg.jpg) center / cover;
+  min-height: auto;
 }
 
 .nav {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   transition: 0.3s;
 }
 
@@ -41,24 +42,16 @@ body {
   margin-right: 92px;
 }
 
-.nav__item:first-child {
+.nav__item--first {
   margin-left: 127px;
 }
 
-.nav__item:nth-child(4) {
-  margin-right: 305px;
+.nav__item--eighth {
+  margin-right: 118px;
 }
 
-.nav__item:nth-child(5) {
-  margin-right: 88px;
-}
-
-.nav__item:nth-child(6) {
-  margin-right: 87px;
-}
-
-.nav__item:nth-child(7) {
-  margin-right: 81px;
+.nav__item--seventh {
+  margin-left: -20px;
 }
 
 .nav__link {
@@ -295,7 +288,7 @@ body {
 .hungry-people__circle {
   display: block;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 88px;
   outline: none;
 }
 
@@ -376,7 +369,10 @@ body {
 .about-us__image img {
   border-radius: 5px;
 }
-
+.about-us__image img {
+  width: 475px;
+  height: 475px;
+}
 .about-us__image::after {
   content: '';
   position: absolute;
@@ -403,7 +399,8 @@ body {
   padding-top: 32px;
   padding-bottom: 95px;
   background-color: #222;
-  background: url(images/our-team/specialtys-bg.jpg) no-repeat;
+  background: url(images/our-team/specialtys-bg.jpg) center / cover;
+  min-height: auto;
 }
 
 .our-team__sup-title {
@@ -513,7 +510,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-left: 135px;
-  padding-right: 193px;
+  padding-right: 197px;
 }
 
 .book__content {
@@ -574,6 +571,8 @@ body {
   margin-right: 68px;
   background: #e8c300;
   margin-top: 1px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .book__button:hover,
@@ -685,7 +684,8 @@ body {
   margin: 0 auto;
   padding: 32px 0 45px;
   background-color: #222;
-  background: url(images/specialties/bg.jpg) no-repeat;
+  background: url(images/specialties/bg.jpg) center / cover;
+  overflow: hidden;
 }
 
 .specialties__sup-title {
@@ -906,7 +906,7 @@ body {
   margin: 0 auto;
   padding: 32px 0 31px;
   background-color: #222;
-  background: url(images/events/bg.jpg) no-repeat;
+  background: url(images/events/bg.jpg) center / cover;
 }
 
 .events__sup-title {
@@ -1028,6 +1028,7 @@ body {
 }
 
 .gallery img {
+  max-width: 100%;
   display: block;
 }
 
@@ -1144,16 +1145,21 @@ body {
   position: absolute;
 }
 
+.contact__list-item:first-child::before {
+  left: 1px;
+  width: 10px;
+}
+
 .contact__list-item--first::before {
-  background: url(images/contact/map.svg) no-repeat;
+  background: url(images/contact/map.svg) center / cover;
 }
 
 .contact__list-item--second::before {
-  background: url(images/contact/phone.svg) no-repeat;
+  background: url(images/contact/phone.svg) center / cover;
 }
 
 .contact__list-item--third::before {
-  background: url(images/contact/envelope.svg) no-repeat;
+  background: url(images/contact/envelope.svg) center / cover;
 }
 
 .contact__list-link {
@@ -1169,6 +1175,14 @@ body {
   width: 640px;
   height: 60px;
   background: #e8c300;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contact__button:hover,
+.contact__button:focus {
+  background-color: #ffd600;
+  outline: 1px solid white;
 }
 
 /* fancybox pop-up */

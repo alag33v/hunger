@@ -1,6 +1,7 @@
 $(document).ready(function () {
   /* Fixed header */
-  let header = $('.nav');
+
+  /*let header = $('.nav');
   let cloneHeader = header.clone();
   let introH = $('.about-us').innerHeight();
   cloneHeader.addClass('fixed');
@@ -13,6 +14,7 @@ $(document).ready(function () {
       cloneHeader.removeClass('show');
     }
   });
+  */
 
   /* Slick slider */
   $('.slider').slick({

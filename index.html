@@ -11,24 +11,28 @@
   <link rel="stylesheet" href="slick.css">
   <link rel="stylesheet" href="jquery.fancybox.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+
 </head>
 
 <body>
 
   <!-- first section -->
-
   <section class="hungry-people">
     <header class="header">
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#" data-scroll=".hungry-people">home</a></li>
+          <li class="nav__item nav__item--first"><a class="nav__link" href="#" data-scroll=".hungry-people">home</a>
+          </li>
           <li class="nav__item"><a class="nav__link" href="#" data-scroll=".about-us">about</a></li>
           <li class="nav__item"><a class="nav__link" href="#" data-scroll=".our-team">team</a></li>
           <li class="nav__item"><a class="nav__link" href="#" data-scroll=".book">booking</a></li>
+        </ul>
+        <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="#" data-scroll=".menu">menu</a></li>
           <li class="nav__item"><a class="nav__link" href="#" data-scroll=".events">events</a></li>
-          <li class="nav__item"><a class="nav__link" href="#" data-scroll=".gallery">galerie</a></li>
-          <li class="nav__item"><a class="nav__link" href="#" data-scroll=".contact">contact</a></li>
+          <li class="nav__item nav__item--seventh"><a class="nav__link" href="#" data-scroll=".gallery">galerie</a></li>
+          <li class="nav__item nav__item--eighth"><a class="nav__link" href="#" data-scroll=".contact">contact</a></li>
         </ul>
       </nav>
       <a class="header__link-img" href="#" data-scroll=".hungry-people">
@@ -120,8 +124,8 @@
           <p class="book__item">
             <input type="text" placeholder="Time" aria-label="Time">
           </p>
-          <button class="button book__button" type="submit" data-fancybox data-src="#trueModal" data-modal="true"
-            href="javascript:;">book now</button>
+          <a class="button book__button" data-fancybox data-src="#trueModal" data-modal="true" href="javascript:;">book
+            now</a>
           <div id="trueModal" class="trueModal">
             <div class="book__wrapper-popup">
               <h2>Success!</h2>
@@ -135,8 +139,10 @@
         <img src="images/book/clock.jpg" alt="clock">
       </div>
     </div>
-    <p class="book__text">Mon - Fri: <span>8PM - 10PM,</span> Sat - Sun: <span>8PM - 3AM,</span> Phone: <span>+40 729
-        131 637/+40 726 458 782</span></p>
+    <div class="book__inner-text">
+      <p class="book__text">Mon - Fri: <span>8PM - 10PM,</span> Sat - Sun: <span>8PM - 3AM,</span> Phone: <span>+40 729
+          131 637/+40 726 458 782</span></p>
+    </div>
   </section>
 
   <!-- fifth section -->
@@ -326,8 +332,8 @@
           <a class="contact__list-link">office@mindblister.com</a>
         </li>
       </ul>
-      <button class="button contact__button" type="submit" data-fancybox data-animation-duration="800"
-        data-src="#animatedModal" href="javascript:;">SEND MESSAGE</button>
+      <a class="button contact__button" data-fancybox data-animation-duration="500" data-src="#animatedModal"
+        href="javascript:;">SEND MESSAGE</a>
     </div>
 
     <div id="animatedModal" class="animated-modal">
