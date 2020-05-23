@@ -25,6 +25,72 @@ body {
   min-height: auto;
 }
 
+/* --- Burger menu --- */
+
+.burger__button-wrapper {
+  width: 25px;
+  height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
+.burger__button {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+  z-index: 5;
+}
+
+.burger__button::before {
+  content: '';
+  width: 25px;
+  height: 2px;
+  top: -7px;
+  left: 0;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  transition: transform 0.2s linear, top 0.2s linear 0.2s;
+}
+
+.burger__button::after {
+  content: '';
+  width: 25px;
+  height: 2px;
+  top: 7px;
+  left: 0;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  transition: transform 0.2s linear, top 0.2s linear 0.2s;
+}
+
+/* --- Burger turn to X --- */
+
+.burger__button.active {
+  background-color: transparent;
+}
+
+.burger__button.active::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s linear 0.2s;
+}
+
+.burger__button.active::after {
+  transform: rotate(135deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s linear 0.2s;
+}
+
+.header {
+  position: relative;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -66,6 +132,60 @@ body {
 
 .nav__link:hover {
   color: #e8c300;
+}
+
+/* --- Mobile navigation --- */
+
+.header__mobile-nav {
+  display: block;
+  position: absolute;
+  top: -1090px;
+  right: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.header__mobile-nav--active {
+  transform: translateY(1050px);
+}
+
+.mobile-nav__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav__item {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.mobile-nav__list:first-child {
+  margin-bottom: 30px;
+}
+
+.mobile-nav__item:last-child {
+  margin-bottom: 350px;
+}
+
+.mobile-nav__link {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 /* header fixed */
@@ -617,6 +737,7 @@ body {
 }
 
 .book__text span {
+  text-decoration: none;
   font-weight: 700;
 }
 
@@ -804,6 +925,8 @@ body {
   color: #000;
   margin-bottom: 37px;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu__title::after {
@@ -1014,6 +1137,7 @@ body {
 }
 
 .events__text span {
+  text-decoration: none;
   font-weight: 700;
 }
 
