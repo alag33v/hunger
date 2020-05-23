@@ -223,9 +223,6 @@
   .contact__title::after {
     top: 46px;
   }
-  .nav.fixed {
-    display: none;
-  }
 }
 
 @media (max-width: 1200px) {
