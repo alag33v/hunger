@@ -7,7 +7,8 @@ $(document).ready(function () {
   let mobileLink = document.querySelectorAll('.mobile-nav__link');
   let body = document.querySelector('body');
 
-  wrapper.addEventListener('click', () => {
+  wrapper.addEventListener('click', (e) => {
+    e.preventDefault();
     burger.classList.toggle('active');
     mobileNav.classList.toggle('header__mobile-nav--active');
     body.classList.toggle('block');
@@ -15,6 +16,7 @@ $(document).ready(function () {
 
   for (var i = 0; i < mobileLink.length; i++) {
     mobileLink[i].addEventListener('click', function (event) {
+      burger.classList.toggle('active');
       mobileNav.classList.remove('header__mobile-nav--active');
       body.classList.remove('block');
     });
